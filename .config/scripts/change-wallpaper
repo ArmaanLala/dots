@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkill -9 swaybg
+swaybg -i $(find /home/armaan/.config/wallpapers/ -type f | shuf -n1) -m fill &

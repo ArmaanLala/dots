@@ -1,0 +1,41 @@
+[shell]
+args = ['--login']
+program = "/usr/bin/zsh"
+
+[cursor]
+style = "Beam"
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 0.95
+
+[window.padding]
+x = 0
+y = 0
+
+#[window.dimensions]
+#columns = 90
+#lines = 25
+
+[colors.normal]
+black=   '0x393b44'
+red=     '0xc94f6d'
+green=   '0x81b29a'
+yellow=  '0xdbc074'
+blue=    '0x719cd6'
+magenta= '0x9d79d6'
+cyan=    '0x63cdcf'
+white=   '0xdfdfe0'
+
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
