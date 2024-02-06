@@ -19,3 +19,5 @@ source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #
 eval "$(starship init zsh)"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

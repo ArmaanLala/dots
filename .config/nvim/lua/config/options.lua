@@ -1,9 +1,9 @@
 local opt = vim.opt
 
 -- Tabs / Indents
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.softtabstop = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.softtabstop = 4
 opt.expandtab = true
 opt.smartindent = true
 opt.wrap = false
@@ -25,7 +25,7 @@ opt.completeopt = "menuone,noinsert,noselect"
 
 -- Behavior
 opt.hidden = true
-opt.errorbells = flase
+opt.errorbells = false
 opt.swapfile = false
 opt.backup = false
 opt.undodir = vim.fn.expand("~/.vim/undodir")

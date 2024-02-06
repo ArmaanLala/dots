@@ -1,3 +1,3 @@
 return {
-  "sophacles/vim-processing",
+    "sophacles/vim-processing",
 }
