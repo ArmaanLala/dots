@@ -17,7 +17,8 @@ source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # End of lines added by compinstalla
 #
-eval "$(starship init zsh)"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
