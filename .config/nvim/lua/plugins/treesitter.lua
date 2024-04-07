@@ -1,37 +1,17 @@
-local config = function()
-  require("nvim-treesitter.configs").setup({
-    indent = {
-      enable = true,
-    },
-    autotag = {
-      enable = true,
-    },
-    ensure_installed = {
-      "markdown",
-      "c",
-      "javascript",
-      "rust",
-      "yaml",
-      "html",
-      "css",
-      "markdown",
-      "bash",
-      "lua",
-      "dockerfile",
-      "gitignore",
-      "python",
-      "cpp",
-    },
+return { -- Highlight, edit, and navigate code
+  'nvim-treesitter/nvim-treesitter',
+  build = ':TSUpdate',
+  opts = {
+    ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
     auto_install = true,
     highlight = {
       enable = true,
-      additional_vim_regex_highlighting = true,
+      additional_vim_regex_highlighting = { 'ruby' },
     },
-  })
-end
-
-return {
-  "nvim-treesitter/nvim-treesitter",
-  lazy = false,
-  config = config
+    indent = { enable = true, disable = { 'ruby' } },
+  },
+  config = function(_, opts)
+    require('nvim-treesitter.configs').setup(opts)
+  end,
 }
+

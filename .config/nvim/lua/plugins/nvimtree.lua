@@ -1,12 +1,13 @@
 return {
-  "nvim-tree/nvim-tree.lua",
+  'nvim-tree/nvim-tree.lua',
   lazy = false,
   config = {
     view = {
-     side = 'right',
+      side = 'right',
     },
     filters = {
       dotfiles = false,
     },
   },
 }
+
