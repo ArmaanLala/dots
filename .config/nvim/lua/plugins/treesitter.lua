@@ -2,7 +2,7 @@ return { -- Highlight, edit, and navigate code
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
   opts = {
-    ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
+    ensure_installed = { 'bash', 'c', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'cpp' },
     auto_install = true,
     highlight = {
       enable = true,
@@ -14,4 +14,3 @@ return { -- Highlight, edit, and navigate code
     require('nvim-treesitter.configs').setup(opts)
   end,
 }
-
