@@ -9,3 +9,12 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+vim.keymap.set('n', '<leader>ff', ':NvimTreeToggle<CR>', { desc = '[F]ile Tree' })
+vim.keymap.set('v', '<', '<gv', { desc = 'Indent left' })
+vim.keymap.set('v', '>', '>gv', { desc = 'Indent right' })
+
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move line down' })
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move line up' })
+-- Half page jumping while keeping cursor in place
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Half page down' })
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Half page up' })

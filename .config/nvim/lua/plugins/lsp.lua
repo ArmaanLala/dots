@@ -54,6 +54,9 @@ return { -- LSP Configuration & Plugins
           },
         },
       },
+      pyright = {},
+      rust_analyzer = {},
+      gopls = {},
     }
     require('mason').setup()
     local ensure_installed = vim.tbl_keys(servers or {})
@@ -61,6 +64,9 @@ return { -- LSP Configuration & Plugins
       'stylua', -- Used to format Lua code
       'clangd',
       'clang-format',
+      'pyright',
+      'rust-analyzer',
+      'gopls',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
     require('mason-lspconfig').setup {
